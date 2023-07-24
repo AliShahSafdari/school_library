@@ -19,10 +19,6 @@ class Person
   public
 
   def can_use_services?
-    @age >= 18 || @parent_permission == true
+    of_age? || @parent_permission == true
   end
 end
-
-# person = Person.new(25, 'John', parent_permission: false)
-
-# puts person.can_use_services?
