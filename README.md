@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h3><b>Decode Morse messages</b></h3>
+  <h3><b>OOP School Library</b></h3>
 
 </div>
 
@@ -13,7 +13,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Decode Morse message ](#-decode-morse-message-)
+- [📖 OOP School Library](#-decode-morse-message-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -52,6 +52,7 @@
 
 - **Create person, stuente, teacher  classes**
 - **Implement encapsulation and inheritance with Ruby**
+- **Implement Decorator Design pattern with Ruby**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +112,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Decode complex messages**
+- [ ] **Capitalize and trim the Name**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
