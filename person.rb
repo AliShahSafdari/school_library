@@ -10,11 +10,12 @@ class Person < Nameable
     @name = name || 'unknown'
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   attr_reader :id
 
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
 
   private
 
@@ -31,11 +32,9 @@ class Person < Nameable
   def correct_name
     @name
   end
-end
 
-person = Person.new(22, 'maximilianus')
-person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name
+  def add_rental(date, book)
+    rental = Rental.new(date, book, self)
+    @rentals.push(rental)
+  end
+end

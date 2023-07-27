@@ -53,6 +53,12 @@
 - **Create person, stuente, teacher  classes**
 - **Implement encapsulation and inheritance with Ruby**
 - **Implement Decorator Design pattern with Ruby**
+- **Use association between classes.**
+- **Add a one-to-many relationship between classroom and student classes.**
+- **Add many-to-many relationships between person and book classes by rental class.**
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
