@@ -10,7 +10,7 @@ class Student < Person
 
   def classroom=(classroom)
     @classroom = classroom
-    owner.animals.push(self) unless owner.animals.include?(self)
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 
   def play_hooky
