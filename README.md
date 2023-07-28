@@ -56,7 +56,8 @@
 - **Use association between classes.**
 - **Add a one-to-many relationship between classroom and student classes.**
 - **Add many-to-many relationships between person and book classes by rental class.**
-
+- **Create basic UI**
+- **The user can run this program by commend line**
 
 
 
