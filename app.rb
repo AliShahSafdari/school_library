@@ -114,7 +114,7 @@ class App
     end
     person_index = gets.chomp.to_i
     puts ''
-    print 'Date: '
+    print 'Date(DD-MM-YYYY): '
     date = gets.chomp
     rental = Rental.new(date, @books[book_index], @people[person_index])
     @rentals.push(rental)
@@ -156,6 +156,7 @@ class App
       rental_list
     else
       puts 'Thank you for using this app'
+      nil
     end
   end
 
@@ -165,10 +166,3 @@ class App
     choose_num(number)
   end
 end
-
-def main
-  app = App.new
-  app.main
-end
-
-main
