@@ -1,0 +1,22 @@
+[
+  {
+    "date": "3344556",
+    "book_id": 183,
+    "person_id": 323
+  },
+  {
+    "date": "8/2/2023",
+    "book_id": 431,
+    "person_id": 292
+  },
+  {
+    "date": "2-8-2023",
+    "book_id": 431,
+    "person_id": 323
+  },
+  {
+    "date": "2-8-2022",
+    "book_id": 183,
+    "person_id": 292
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "person_type": 1,
+    "name": "alishah",
+    "age": 20,
+    "parent_permission": true,
+    "id": 323
+  },
+  {
+    "person_type": 2,
+    "name": "Mohammad",
+    "age": 30,
+    "specialization": "Programmer",
+    "id": 292
+  },
+  {
+    "person_type": 1,
+    "name": "Ali",
+    "age": 22,
+    "parent_permission": true,
+    "id": 867
+  }
+]

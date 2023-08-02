@@ -15,7 +15,7 @@ class Person < Nameable
 
   attr_reader :id
 
-  attr_accessor :name, :age, :rentals
+  attr_accessor :name, :age, :rental, :parent_permission
 
   private
 
@@ -34,7 +34,6 @@ class Person < Nameable
   end
 
   def add_rental(date, book)
-    rental = Rental.new(date, book, self)
-    @rentals.push(rental)
+    Rental.new(date, book, self)
   end
 end
