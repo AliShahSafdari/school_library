@@ -49,9 +49,7 @@ class InputClass
   def book_select(books)
     puts 'Select a book from the following list by number'
 
-    books.each_with_index do |book, index|
-      puts "#{index}) Title: \"#{book.title}\"    Author: #{book.author}"
-    end
+    books.each_with_index { |book, index| puts "#{index}) Title:  \"#{book[:title]}\"    Author\" #{book[:author]}\"" }
     gets.chomp.to_i
   end
 
@@ -59,7 +57,8 @@ class InputClass
     puts "\nSelect a person from the following list by number (not id)"
 
     people.each_with_index do |person, index|
-      puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      print "#{index}) Name: #{person[:name]}  Age: #{person[:age]} "
+      print " - #{person[:person_type] == 1 ? 'Student' : 'Teacher'}"
     end
     gets.chomp.to_i
   end
@@ -72,6 +71,6 @@ class InputClass
   def rental_select(rentals)
     print 'ID of person: '
     person_id = gets.chomp.to_i
-    rentals.select { |rental| rental.person.id == person_id }
+    rentals.select { |rental| rental[:person_id] == person_id }
   end
 end

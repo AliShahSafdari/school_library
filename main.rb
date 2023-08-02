@@ -25,6 +25,7 @@ end
 
 def main
   app = App.new
+
   loop do
     choose_option
     number = gets.chomp.to_i
