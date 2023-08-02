@@ -57,8 +57,8 @@ class InputClass
     puts "\nSelect a person from the following list by number (not id)"
 
     people.each_with_index do |person, index|
-      print "#{index}) Name: #{person[:name]}  Age: #{person[:age]} "
-      print " - #{person[:person_type] == 1 ? 'Student' : 'Teacher'}"
+      puts "#{index}) Name: #{person[:name]}  Age: #{person[:age]} " \
+           " - #{person[:person_type] == 1 ? 'Student' : 'Teacher'}"
     end
     gets.chomp.to_i
   end

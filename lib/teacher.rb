@@ -12,7 +12,3 @@ class Teacher < Person
     true
   end
 end
-
-teacher = Teacher.new('Programming', 30, 'John Doe', parent_permission: true)
-puts teacher.name
-puts teacher.specialization

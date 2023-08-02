@@ -12,5 +12,12 @@
     "age": 30,
     "specialization": "Programmer",
     "id": 292
+  },
+  {
+    "person_type": 1,
+    "name": "Ali",
+    "age": 22,
+    "parent_permission": true,
+    "id": 867
   }
 ]
