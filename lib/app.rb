@@ -97,7 +97,8 @@ class App
     @people = read_file('people.json')
     @message.info_message('person') if @people.empty?
     @people.each do |person|
-      puts "[#{person[:person_type] == 1 ? 'Student' : 'Teacher'}] Name: #{person[:name]}, Age: #{person[:age]}"
+      print "[#{person[:person_type] == 1 ? 'Student' : 'Teacher'}] Name: "
+      print "#{person[:name]}, Age: #{person[:age]}, ID:#{person[:id]}\n "
     end
   end
 
