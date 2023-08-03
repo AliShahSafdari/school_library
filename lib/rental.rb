@@ -5,12 +5,9 @@ class Rental
   def initialize(date, book, person)
     @date = date
     @book = book
-    book[:rental] ||= []
-    book[:rental] << self
-
+    book.rental << self
     @person = person
-    person[:rental] ||= []
-    person[:rental] << self
+    person.rental << self
   end
 
   def to_hash

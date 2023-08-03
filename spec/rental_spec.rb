@@ -1,25 +1,33 @@
-require_relative '../lib/classroom'
+require_relative '../lib/rental'
 
-describe Classroom do
-  context 'we create the Classroom object and test it ' do
-    let(:classroom) { Classroom.new("English")}
-    before :each do
-        @classroom = Classroom.new('CSD21')
-    end
-    it 'Classroom label must be English' do
-      expect(classroom.label).to eq('English')
-    end
-    it 'checking classroom instance' do
-      expect(classroom).to be_instance_of Classroom
-    end
-    
-    it 'test for add student' do
-        student = double('student')
-        allow(student).to receive(:age) { '24' }
-        allow(student).to receive(:name) { 'Nasir' }
-        allow(student).to receive(:parent_permission) { true }
-        allow(student).to receive(:classroom=).and_return(Classroom)
-        expect(@classroom.add_student(student).students[0].name).to eq('Nasir')
-    end
+describe Rental do
+  before :each do
+    person = double('../lib/Person', rental: [])
+    allow(person).to receive(:age) { 24 }
+    allow(person).to receive(:name) { 'elham' }
+    allow(person).to receive(:parent_permission) { true }
+
+    book = double('../lib/book', rental: [])
+    allow(book).to receive(:title) { 'Harry Potter' }
+    allow(book).to receive(:author) { 'Brian' }
+
+    @rental = Rental.new('2023-05-24', book, person)
+  end
+
+  it 'checking rental instance' do
+    expect(@rental).to be_instance_of Rental
+  end
+
+  it 'checking attributes' do
+    expect(@rental.date).to eq('2023-05-24')
+  end
+
+  it 'checking for book' do
+    expect(@rental.book.title).to eq('Harry Potter')
+  end
+
+  it 'checking for person' do
+    expect(@rental.person.name).to eq('elham')
   end
 end
+
