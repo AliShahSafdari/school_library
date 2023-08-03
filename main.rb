@@ -1,14 +1,14 @@
 require_relative 'lib/app'
 
 def choose_option
-  puts 'please choose an option by entering a number'
-  puts '1 - List all books'
-  puts '2 - List all people'
-  puts '3 - create a person'
-  puts '4 - create a book'
-  puts '5 - create a rental'
-  puts '6 - List all rentals for a given person id'
-  puts '7 - Exit'
+  'please choose an option by entering a number
+  1 - List all books
+  2 - List all people
+  3 - create a person
+  4 - create a book
+  5 - create a rental
+  6 - List all rentals for a given person id
+  7 - Exit'
 end
 
 def choose_num(number, app)
@@ -27,7 +27,7 @@ def main
   app = App.new
 
   loop do
-    choose_option
+    puts choose_option
     number = gets.chomp.to_i
     break if number == 7
 
