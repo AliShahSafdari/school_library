@@ -1,25 +1,23 @@
-require_relative '../lib/classroom'
+require_relative '../lib/rental'
 
-describe Classroom do
-  context 'we create the Classroom object and test it ' do
-    let(:classroom) { Classroom.new("English")}
+describe Rental do
+  context 'we create the Rental object and test it' do
     before :each do
-        @classroom = Classroom.new('CSD21')
+      person = double('Person')
+      allow(person).to receive(:age) { 24 }
+      allow(person).to receive(:name) { 'ali' }
+      allow(person).to receive(:parent_permission) { true }
+
+      book = double('book')
+      allow(book).to receive(:title) { 'Harry Potter' }
+      allow(book).to receive(:author) { 'Brian' }
+
+      @rental = Rental.new('2023-05-24', book, person)
     end
-    it 'Classroom label must be English' do
-      expect(classroom.label).to eq('English')
-    end
-    it 'checking classroom instance' do
-      expect(classroom).to be_instance_of Classroom
-    end
-    
-    it 'test for add student' do
-        student = double('student')
-        allow(student).to receive(:age) { '24' }
-        allow(student).to receive(:name) { 'Nasir' }
-        allow(student).to receive(:parent_permission) { true }
-        allow(student).to receive(:classroom=).and_return(Classroom)
-        expect(@classroom.add_student(student).students[0].name).to eq('Nasir')
+
+    it 'checking rental instance' do
+      expect(@rental).to be_instance_of Rental
     end
   end
 end
+

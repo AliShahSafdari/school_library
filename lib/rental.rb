@@ -5,12 +5,13 @@ class Rental
   def initialize(date, book, person)
     @date = date
     @book = book
-    book[:rental] ||= []
-    book[:rental] << self
+    @book_rentals = []  # Use an instance variable to store rentals directly for book
 
     @person = person
-    person[:rental] ||= []
-    person[:rental] << self
+    @person_rentals = []  # Use an instance variable to store rentals directly for person
+
+    @book_rentals << self
+    @person_rentals << self
   end
 
   def to_hash

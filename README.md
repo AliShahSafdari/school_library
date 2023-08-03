@@ -44,7 +44,8 @@
 - [x] **Ruby decorator**
 - [x] **Ruby associations**
 - [x] **Basic UI**
-- [ ] **Preserve Data**
+- [x] **Preserve Data**
+- [x] **Unit Tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +96,7 @@ git clone git@github.com:Nasirkhan294/school_library.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Unit Tests**
+- [ ] **Advance UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
