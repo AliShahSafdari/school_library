@@ -20,4 +20,3 @@ describe Rental do
     end
   end
 end
-
