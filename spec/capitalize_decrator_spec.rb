@@ -1,7 +1,6 @@
 require_relative '../lib/base_decrator'
 require_relative '../lib/capitalize_decrator'
 
-
 describe CapitalizeDecorator do
   context 'we create the CapitalizeDecorator object and test it ' do
     let(:nameable) { double('Nameable', correct_name: 'Alishah') }

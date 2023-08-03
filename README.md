@@ -72,6 +72,12 @@ In order to run this project you need:
 git clone git@github.com:Nasirkhan294/school_library.git
 ```
 
+### RSpec Tests
+
+```
+ rspec spec
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
