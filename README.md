@@ -44,7 +44,8 @@
 - [x] **Ruby decorator**
 - [x] **Ruby associations**
 - [x] **Basic UI**
-- [ ] **Preserve Data**
+- [x] **Preserve Data**
+- [x] **Unit Tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,6 +72,12 @@ In order to run this project you need:
 git clone git@github.com:Nasirkhan294/school_library.git
 ```
 
+### RSpec Tests
+
+```
+ rspec spec
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -95,7 +102,7 @@ git clone git@github.com:Nasirkhan294/school_library.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Unit Tests**
+- [ ] **Advance UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

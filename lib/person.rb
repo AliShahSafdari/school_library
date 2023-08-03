@@ -4,6 +4,10 @@ require_relative 'capitalize_decrator'
 require_relative 'trimmer_decrator'
 
 class Person < Nameable
+  attr_reader :id
+
+  attr_accessor :name, :age, :rental, :parent_permission
+
   def initialize(age, name = nil, parent_permission: true)
     super()
     @id = Random.rand(1..1000)
@@ -13,20 +17,8 @@ class Person < Nameable
     @rentals = []
   end
 
-  attr_reader :id
-
-  attr_accessor :name, :age, :rental, :parent_permission
-
-  private
-
-  def of_age?
-    @age >= 18
-  end
-
-  public
-
   def can_use_services?
-    of_age? || @parent_permission == true
+    of_age? || @parent_permission
   end
 
   def correct_name
@@ -35,5 +27,11 @@ class Person < Nameable
 
   def add_rental(date, book)
     Rental.new(date, book, self)
+  end
+
+  private
+
+  def of_age?
+    @age >= 18
   end
 end
